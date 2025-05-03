@@ -111,7 +111,7 @@ body {
 
 .bloque1 .imagen img{
     position: absolute;
-    right: 350px;
+    right: 250px;
     border-radius: 50%;
     border: 15px solid #b6d88e;
     width: 500px;
@@ -174,7 +174,7 @@ body {
     text-align: center;
     font-size: 30px;
     padding-top: 90px;
-    padding-bottom: 160px;
+    
 }
 
 .bloque3 .texto{
@@ -202,16 +202,68 @@ body {
 }
 
 
-/* Responsivo para menos de 1500px */
-@media (max-width: 1500px) {
-    .bloque1 .imagen img {
-        right: 200px;
+
+@media (min-width: 1501px) {
+    .contenedor-principal {
+        background-image: url("./fondo.jpg");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
-    .contenedor-principal {
-        background-size: 120% 100%;
+    .fondo img,
+    footer img {
+        display: none;
     }
 }
+
+@media (max-width: 1500px) {
+    .contenedor-principal {
+        background: none;
+    }
+
+    .fondo img,
+    footer img {
+        display: block;
+    }
+}
+
+
+.fondo {
+    position: relative;
+    z-index: 0;
+}
+
+.fondo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+footer {
+    position: relative;
+    z-index: -1;
+}
+
+footer img {
+    position: absolute;
+    bottom: 0px; /* sube la imagen desde el fondo hacia arriba */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+.contenedor-principal {
+    position: relative;
+    z-index: 3;
+}
+
+                                       
 
 /* Responsivo para menos de 1300px */
 @media (max-width: 1300px) {
@@ -253,6 +305,7 @@ body {
 
     .bloque1 .texto {
         padding-left: 0;
+        order: 2;
     }
 
     .bloque1 .imagen img {
@@ -370,27 +423,3 @@ body {
     }
 
 }
-
-@media (max-width: 1500px) {
-    .contenedor-principal {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center top;
-    }
-  }
-  
-  @media (max-width: 1000px) {
-    .contenedor-principal {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: top center;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .contenedor-principal {
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-  }  
