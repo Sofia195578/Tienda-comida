@@ -510,12 +510,12 @@ footer img {
     }
 
     .texto .explore{
-        font-size: 15px;
+        font-size: 18px;
         padding: 10px 10px;
     }
 
     .bloque1 .texto .order{
-        font-size: 15px;
+        font-size: 18px;
         padding: 12px 30px;
     }
 
@@ -537,8 +537,7 @@ footer img {
     }
 
     .card {
-        padding: 0px;
-        padding-bottom: 15px;
+        padding: 0px 15px 15px 15px;
         font-size: 18px;
     }
 
