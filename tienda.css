@@ -39,6 +39,7 @@ body {
     gap: 30px;
     font-size: 30px;
 }
+
 .busqueda .home{
     color: #84b750;
 }
@@ -257,19 +258,108 @@ footer img {
     z-index: -1;
 }
 
-
 .contenedor-principal {
     position: relative;
     z-index: 3;
 }
 
-                                       
+.barra .logo{
+    font-size: 25px;
+}
+.barra .busqueda{
+    font-size: 25px;
+}
 
-/* Responsivo para menos de 1300px */
+.botones .emoji{
+    font-size: 18px;
+    padding: 0px 15px;
+}
+
+.botones .signUp{
+    font-size: 18px;
+    padding: 0px 25px;
+}
+                                       
+.bloque1 .imagen img{
+    right: 150px;
+    width: 450px;
+}
+
+.texto h1{
+    font-size: 60px;
+}
+
+.texto p{
+    font-size: 30px;
+}
+
+.texto .explore{
+    padding: 15px 20px;
+    font-size: 25px;
+}
+
+.bloque1 .texto .order{
+    padding: 18px 50px;
+    font-size: 25px;
+}
+
+.bloque2{
+    padding: 80px 50px;
+}
+
+.bloque2 .menu{
+    padding-top: 280px;
+}
+
+.bloque2 .menu img{
+    width: 250px;
+    height: 250px;
+}
+
+.bloque2 p{
+    padding: 10px 50px 20px;
+}
+
+.bloque3 .texto{
+    padding: 0 400px;
+}
+
 @media (max-width: 1300px) {
+    .barra .logo{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+
+    .barra .busqueda{
+        font-size: 20px;
+    }
+
+    .barra .botones{
+        font-size: 15px;
+    }
+
+    .texto .hungry{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .texto h1{
+        font-size: 50px;
+    }
+
     .bloque1 .imagen img {
         right: 100px;
-        width: 400px;
+        width: 350px;
+    }
+
+    .texto .explore{
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .bloque1 .texto .order{
+        padding: 12px 40px;
+        font-size: 18px;
     }
 
     .bloque2 {
@@ -277,13 +367,26 @@ footer img {
         padding: 60px 50px;
     }
 
+    .bloque2 p{
+        padding: 10px 20px 20px;
+    }
+
     .bloque3 .texto {
         padding: 0 200px;
     }
+
+    .card{
+        font-size: 18px;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .card img{
+        width: 100px;
+    }
 }
 
-/* Responsivo para menos de 1100px */
-@media (max-width: 1100px) {
+
+@media (max-width: 1000px) {
     .barra {
         grid-template-columns: 1fr;
         text-align: center;
@@ -316,6 +419,14 @@ footer img {
         display: block;
     }
 
+    .botones .emoji{
+        border: 1px solid black;
+    }
+
+    .botones .signUp{
+        border: 1px solid black;
+    }
+
     .bloque3 .cards {
         grid-template-columns: 1fr;
     }
@@ -326,7 +437,7 @@ footer img {
 
 }
 
-/* Responsivo para menos de 900px */
+
 @media (max-width: 900px) {
     .bloque2 {
         grid-template-columns: 1fr;
@@ -388,8 +499,26 @@ footer img {
 
 }
 
-/* Responsivo para menos de 500px */
 @media (max-width: 500px) {
+
+    .botones .emoji{
+        border: 1px solid black;
+    }
+
+    .botones .signUp{
+        border: 1px solid black;
+    }
+
+    .texto .explore{
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+
+    .bloque1 .texto .order{
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+
     .texto h1 {
         font-size: 35px;
         padding: 20px 0;
@@ -399,18 +528,17 @@ footer img {
         font-size: 18px;
     }
 
-    .texto .order,
-    .texto .explore {
-        font-size: 18px;
-        padding: 10px 30px;
-    }
-
     .bloque3 .texto {
         padding: 0 20px;
     }
 
+    .bloque3 .cards{
+        padding: 30px 30px;
+    }
+
     .card {
-        padding: 0 20px 30px 20px;
+        padding: 0px;
+        padding-bottom: 15px;
         font-size: 18px;
     }
 
